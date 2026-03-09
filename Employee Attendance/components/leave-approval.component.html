@@ -1,0 +1,11 @@
+
+<div class="card">
+<h2>Leave Approval</h2>
+
+<div *ngFor="let l of service.leaves">
+<p>{{l.reason}} - {{l.status}}</p>
+<button (click)="approve(l.id)">Approve</button>
+<button (click)="reject(l.id)">Reject</button>
+</div>
+
+</div>

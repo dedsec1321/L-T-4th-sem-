@@ -1,0 +1,15 @@
+
+<div class="card">
+<h2>Employees</h2>
+
+<input placeholder="Name" [(ngModel)]="name">
+<input placeholder="Department" [(ngModel)]="department">
+<button (click)="add()">Add</button>
+
+<ul>
+<li *ngFor="let e of employees">
+ {{e.name}} - {{e.department}}
+</li>
+</ul>
+
+</div>
